@@ -5,9 +5,9 @@ const { mergeResolvers, mergeTypes, fileLoader } = require("merge-graphql-schema
 
 const options = {
   port: 4000,
-  endpoint: '/graphql',
-  subscriptions: '/subscriptions',
-  playground: '/playground',
+  endpoint: '/v1/graphql',
+  subscriptions: '/v1/subscriptions',
+  playground: '/v1/playground',
 }
 
 const typeArray = fileLoader(path.join(__dirname, './typeDefs/*'))
